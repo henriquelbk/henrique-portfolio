@@ -8,7 +8,7 @@ import {
   FaFigma,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
