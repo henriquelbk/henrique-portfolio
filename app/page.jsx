@@ -18,7 +18,7 @@ const Home = () => {
             <p className="max-x-[500px] mb-9 text-white/80">I excel at crafting usefull software and I am proficient in various programming technologies.
             </p>
             {/* btn and socials*/}
-            <div className="flex flex-col xl: flex-row items-center gap-8">
+            <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                 <span>Download CV</span>
                 <FiDownload className="text-xl"/>
