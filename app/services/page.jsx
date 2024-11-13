@@ -8,25 +8,25 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    description: "ashdivbasodvbasoldvb",
+    description: "Fullstack responsive applications, both for web2 and web3.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
-    description: "ashdivbaBSDBDSBNsodvbasoldvb",
+    title: "Web Scraping Projects",
+    description: "Bots that are able do scrape data from the web automatically.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
-    description: "ashdivbaABDFBADNodvbasoldvb",
+    title: "Trading Bots",
+    description: "Bots that are capable of making trades in the greatests exchanges of the world.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
-    description: "ashdivbasMFMDSodvbasoldvb",
+    title: "Ebooks",
+    description: "Want to learn more about web3? These free Ebooks may help you!",
     href: "",
   },
 ];

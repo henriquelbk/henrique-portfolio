@@ -8,6 +8,7 @@ import {
   FaFigma,
   FaNodeJs,
 } from "react-icons/fa";
+import { SiSolidity, SiTypescript } from "react-icons/si";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -21,15 +22,11 @@ import { motion } from "framer-motion";
 
 const about = {
   title: "About me",
-  description: "fvafivauhfvasuvn",
+  description: "Basic information:",
   info: [
     {
       fieldName: "Name",
       fieldValue: "Henrique Louback",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(21) 09237107401",
     },
     {
       fieldName: "Experience",
@@ -40,16 +37,12 @@ const about = {
       fieldValue: "Brazilian",
     },
     {
-      fieldName: "Email",
-      fieldValue: "loubackhenrique123@gmail.com",
-    },
-    {
       fieldName: "Freelance",
       fieldValue: "Available",
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Portuguese, Spanish",
+      fieldValue: "English and Portuguese",
     },
   ],
 };
@@ -57,12 +50,12 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
-  description: "vasdfovhasdfvnadfkv",
+  description: "Where I worked:",
   items: [
     {
-      company: "",
-      position: "",
-      duration: "",
+      company: "RISK3 Technology in Credit Analysis",
+      position: "Credit Analyst",
+      duration: "2022-today",
     },
   ],
 };
@@ -70,7 +63,7 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
-  description: "vasdfovhasdfvnadfkv",
+  description: "Major and courses:",
   items: [
     {
       institution: "Fluminense Federal University - Brazil",
@@ -97,19 +90,15 @@ const education = {
 
 const skills = {
   title: "My Skills",
-  description: "vasdfovhasdfvnadfkv",
+  description: "Some of the technologies that I work with:",
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
     {
       icon: <FaJs />,
       name: "javascript",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "typescript",
     },
     {
       icon: <FaNodeJs />,
@@ -128,9 +117,13 @@ const skills = {
       name: "tailwind.css",
     },
     {
+      icon: <SiSolidity />,
+      name: "solidity",
+    },
+    {
       icon: <FaFigma />,
       name: "figma",
-    },
+    }    
   ],
 };
 
@@ -147,13 +140,13 @@ const Resume = () => {
       <div className="container mx-auto">
         <Tabs
           defaultValue="experience"
-          className="flex flex-col xl:flex-row gap-[60px]"
+          className="flex flex-col xl:flex-row gap-[60px] items-center"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="experience" className="hover:text-accent">Experience</TabsTrigger>
+            <TabsTrigger value="education" className="hover:text-accent">Education</TabsTrigger>
+            <TabsTrigger value="skills" className="hover:text-accent">Skills</TabsTrigger>
+            <TabsTrigger value="about" className="hover:text-accent">About me</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
